@@ -20,29 +20,12 @@ namespace Xamasoft.JsonClassGenerator.UI
 
 
 
-
-
-#if APPSERVICES
-        public static antiufo.ApplicationServices.ApplicationServices appServices;
-
-
-        public static void InitAppServices()
-        {
-            if (appServices != null) return;
-            appServices = new antiufo.ApplicationServices.ApplicationServices("JsonClassGen", "JSON C# Class Generator", true, true);
-            appServices.DefaultEndpoint = "http://antiufo.altervista.org/services/index.php";
-            appServices.ProducerUrl = "http://antiufo.altervista.org/";
-            appServices.EndpointTag = "<!--Endpoint2 ";
-            appServices.UpdateChecker.AsyncAutomaticUpdatesCheck();
-        }
-
-#else
         public static void InitAppServices()
         {
 
         }
 
-#endif 
+
         
 
 

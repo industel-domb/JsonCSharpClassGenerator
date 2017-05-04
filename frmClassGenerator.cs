@@ -27,7 +27,7 @@ namespace Xamasoft.JsonClassGenerator.UI
             InitializeComponent();
             this.Font = SystemFonts.MessageBoxFont;
 
-            Program.InitAppServices();
+      
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
